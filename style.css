@@ -1,0 +1,137 @@
+:root {
+  --color-blue: #65A8C5;
+  --color-black: #0000;
+  --color-grey: #333;
+  --font-main: Arial, Helvetica, sans-serif;
+  --font-weight: 600;
+}
+
+
+/* Elements */
+
+body {
+  font-family: var(--font-main);
+  font-weight: var(--font-weight);
+  color: var(--color-grey);
+}
+
+footer {
+  padding-top: 100px;
+}
+
+i {
+  color: black;
+}
+
+i:hover {
+  color: white;
+}
+
+p {
+  font-family: var(--font-main);
+  font-weight: var(--font-weight);
+  color: var(--color-grey);
+}
+
+
+/* Ids */
+
+#hero-lg {
+  height: 50vh;
+  padding: 100px 0 150px 0;
+  margin-top: 0px;
+  text-align: center;
+}
+
+#hero-sm {
+  height: 25vh;
+  text-align: center;
+}
+
+
+/* Classes */
+
+.background {
+  position: fixed;
+  width: 100vw;
+  margin-left: -50%;
+}
+
+.card {
+  opacity: .5;
+  transition: all .3s ease-in-out;
+}
+
+.card:hover {
+  opacity: 1;
+}
+
+.center {
+  text-align: center;
+}
+
+.btn-dark {
+  border-radius: 100%;
+  padding: 0 10px 0 10px;
+}
+
+.btn-primary {
+  background-color: transparent;
+  border-color: var(--color-blue);
+  border-width: 3px;
+  color: black;
+  font-weight: var(--font-weight);
+}
+
+.btn-primary:hover {
+  background-color: black;
+  border-color: var(--color-black);
+  border-radius: 0px;
+}
+
+.btn-secondary {
+  background-color: var(--color-blue);
+  border-color: var(--color-blue);
+  border-width: 3px;
+  color: black;
+  font-weight: var(--font-weight);
+}
+
+.btn-secondary:hover {
+  background-color: black;
+  border-color: var(--color-black);
+  border-radius: 0px;
+}
+
+.frame {
+  width: 80vw;
+  height: 80vh;
+}
+
+.modal-body {
+  padding-left: 25px;
+}
+
+.modal-content {
+  border-radius: 0px;
+  color: var(--color-grey);
+}
+
+.modal-header {
+  background-color: black;
+  border-radius: 0px;
+  color: white;
+}
+
+.modal-footer {
+  background-color: black;
+  border-radius: 0px;
+}
+
+.navbar-dark {
+  background-color: black;
+  position: fixed;
+  margin-bottom: 50px;
+  width: 100%;
+  z-index: 999;
+}
