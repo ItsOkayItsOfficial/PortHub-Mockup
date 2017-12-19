@@ -24,7 +24,7 @@ i {
 }
 
 i:hover {
-  color: white;
+  color: var(--color-blue);
 }
 
 p {
@@ -59,7 +59,7 @@ p {
 
 .card {
   opacity: .5;
-  transition: all .3s ease-in-out;
+  transition: all 1s ease-in-out;
 }
 
 .card:hover {
@@ -124,7 +124,6 @@ p {
 }
 
 .modal-footer {
-  background-color: black;
   border-radius: 0px;
 }
 
@@ -134,4 +133,9 @@ p {
   margin-bottom: 50px;
   width: 100%;
   z-index: 999;
+}
+
+@keyframes expand {
+  0% {height: 350px;}
+  100% {height: 850px;}
 }
