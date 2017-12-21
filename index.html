@@ -12,15 +12,14 @@
     crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
   <link rel="stylesheet" href="./style.css">
-
 </head>
 
 <body>
   <div class='container center'>
-    <!-- <video class="background" autoplay="true" name="media" loop>
+    <video class="background" autoplay="true" name="media" loop>
       <source src="https://s3-eu-west-1.amazonaws.com/video.gallereplay.com/artistarea/Lighthouse%20stands%20in%20Istanbul%E2%80%99s%20harbour_0554659b-5dc1-43d6-8a93-b31ec6b67f63/Cinemagraph_plain/1920x1080/cinemagraph.mp4"
         type="video/mp4">
-    </video> -->
+    </video>
 
     <nav class="navbar">
       <ul class="navbar-nav ml-auto">
@@ -36,7 +35,9 @@
 
     <div class='row'>
       <div id='hero-lg' class='col-lg-12'>
-        <img width="300px" src='https://camo.githubusercontent.com/8f12aa75a329d4b8df4ded8a752981f73573f2a7/68747470733a2f2f63646e2e7261776769742e636f6d2f4974734f6b61794974734f6666696369616c2f70726f6a656374332f6465762f6173736574732f696d616765732f706f72746875622d6c6f676f2e7376673f73616e6974697a653d74727565'>
+        <a data-toggle="tooltip" data-placement="right" title="Some tooltip text! This is a really long tool tip that will take up a lot of space!">
+          <img width="300px" src='https://camo.githubusercontent.com/8f12aa75a329d4b8df4ded8a752981f73573f2a7/68747470733a2f2f63646e2e7261776769742e636f6d2f4974734f6b61794974734f6666696369616c2f70726f6a656374332f6465762f6173736574732f696d616765732f706f72746875622d6c6f676f2e7376673f73616e6974697a653d74727565'>
+        </a>
       </div>
       <!-- /#hero -->
     </div>
@@ -132,6 +133,12 @@
     crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
     crossorigin="anonymous"></script>
+
+  <script>
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+    })
+  </script>
 </body>
 
 </html>

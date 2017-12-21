@@ -59,7 +59,7 @@ p {
 
 .card {
   opacity: .5;
-  transition: all 1s ease-in-out;
+  transition: all .3s ease-in-out;
 }
 
 .card:hover {
@@ -108,6 +108,38 @@ p {
   height: 80vh;
 }
 
+#general {
+  display: none;
+  opacity: 0;
+}
+
+#general:target {
+  display: block;
+  opacity: 1;
+  transition: all 1s;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+}
+
+#experience {
+  display: none;
+  transition: all 1s ease-in-out;
+}
+
+#experience:target {
+  display: block;
+  transition: all 1s ease-in-out;
+}
+
+#projects {
+  display: none;
+  transition: all 1s ease-in-out;
+}
+
+#projects:target {
+  display: block;
+}
+
 .modal-body {
   padding-left: 25px;
 }
@@ -125,6 +157,7 @@ p {
 
 .modal-footer {
   border-radius: 0px;
+  border-color: transparent;
 }
 
 .navbar-dark {
