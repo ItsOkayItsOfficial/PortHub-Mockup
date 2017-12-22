@@ -36,6 +36,29 @@ p {
 
 /* Ids */
 
+#experience {
+  display: none;
+  transition: all 1s ease-in-out;
+}
+
+#experience:target {
+  display: block;
+  transition: all 1s ease-in-out;
+}
+
+#general {
+  display: none;
+  opacity: 0;
+}
+
+#general:target {
+  display: block;
+  opacity: 1;
+  transition: all 1s;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+}
+
 #hero-lg {
   height: 50vh;
   padding: 100px 0 150px 0;
@@ -46,6 +69,15 @@ p {
 #hero-sm {
   height: 25vh;
   text-align: center;
+}
+
+#projects {
+  display: none;
+  transition: all 1s ease-in-out;
+}
+
+#projects:target {
+  display: block;
 }
 
 
@@ -108,38 +140,6 @@ p {
   height: 80vh;
 }
 
-#general {
-  display: none;
-  opacity: 0;
-}
-
-#general:target {
-  display: block;
-  opacity: 1;
-  transition: all 1s;
-  -webkit-transition: all 1s;
-  -moz-transition: all 1s;
-}
-
-#experience {
-  display: none;
-  transition: all 1s ease-in-out;
-}
-
-#experience:target {
-  display: block;
-  transition: all 1s ease-in-out;
-}
-
-#projects {
-  display: none;
-  transition: all 1s ease-in-out;
-}
-
-#projects:target {
-  display: block;
-}
-
 .modal-body {
   padding-left: 25px;
 }
@@ -167,6 +167,13 @@ p {
   width: 100%;
   z-index: 999;
 }
+
+.tooltip-inner {
+  background-color: green;
+}
+
+
+/* Keyframes */
 
 @keyframes expand {
   0% {height: 350px;}
